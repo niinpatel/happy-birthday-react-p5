@@ -29,9 +29,9 @@ export default (sketch) => {
       let firstWord = 'Happy'
       let secondWord = 'Birthday';
       let thirdWord = 'Trisha'
-      firstWordPoints = font.textToPoints(firstWord, width * 0.01, height * 0.35, width * 0.3);
-      secondWordPoints = font.textToPoints(secondWord, width * 0.01, height * 0.55, width * 0.25);
-      thirdWordPoints = font.textToPoints(thirdWord, width * 0.01, height * 0.75, width * 0.32);
+      firstWordPoints = font.textToPoints(firstWord, width * 0.01, height * 0.3, width * 0.3);
+      secondWordPoints = font.textToPoints(secondWord, width * 0.01, height * 0.5, width * 0.25);
+      thirdWordPoints = font.textToPoints(thirdWord, width * 0.01, height * 0.7, width * 0.32);
     }
 
     firstWordPoints.forEach((point) => {
