@@ -4,10 +4,9 @@ import fontFile from './AvenirNextLTPro-Demi.otf';
 const defaultFrameRate = 30; // low framerate to avoid too much strain on mobile phones
 
 
-export default (sketch) => {
+export default (parent) => (sketch) => {
   let font;
   let dots;
-  let parent;
   let firstWordPoints;
   let secondWordPoints;
   let thirdWordPoints = [];
@@ -55,7 +54,6 @@ export default (sketch) => {
   };
 
   sketch.setup = () => {
-    parent = document.getElementById('canvas-parent');
     const width = parent.offsetWidth;
     const height = parent.offsetHeight;
     sketch.createCanvas(width, height);

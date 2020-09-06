@@ -6,11 +6,11 @@ import p5 from 'p5';
 const App = () => {
   const canvasRef = React.useRef(null)
 
-  React.useEffect(() => { new p5(sketch, canvasRef.current); })
+  React.useEffect(() => { new p5(sketch(canvasRef.current), canvasRef.current); })
 
   return (
     <div className="main">
-      <div id="canvas-parent" ref={canvasRef} />
+      <div ref={canvasRef} />
     </div >
   )
 }
