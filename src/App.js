@@ -14,10 +14,8 @@ class App extends React.Component { // TODO: refactor into functional component
 
     return (
       <div className="main">
-        <div className="content">
-          <div id="canvas-parent" ref={canvas => (this.canvas = canvas)} />
-        </div>
-      </div>
+        <div id="canvas-parent" ref={canvas => (this.canvas = canvas)} />
+      </div >
     );
   }
 }

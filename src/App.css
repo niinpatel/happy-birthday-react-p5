@@ -6,18 +6,8 @@ body {
   display: grid;
   height: 100vh;
   width: auto;
-}
-
-.content {
-  display: grid;
-  grid-row: auto;
-  grid-column: auto;
-  height: 100%;
   animation: loading 0.5s linear;
 }
-
-
-
 
 @keyframes loading {
   from {
@@ -29,24 +19,4 @@ body {
     scale: 1;
     -webkit-transform: scale(1);
   }
-}
-
-@keyframes beat {
-  from {
-    -webkit-transform: scale(1.05);
-  }
-  to {
-    -webkit-transform: scale(1);
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .content {
-    grid-row: auto;
-    grid-column: auto;
-  }
-
-
-
-
 }
