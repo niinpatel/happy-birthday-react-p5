@@ -8,10 +8,7 @@ class App extends React.Component { // TODO: refactor into functional component
     new p5(sketch, this.canvas);
   }
 
-
   render() {
-
-
     return (
       <div className="main">
         <div id="canvas-parent" ref={canvas => (this.canvas = canvas)} />
