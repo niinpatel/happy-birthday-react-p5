@@ -10,6 +10,9 @@ const App = () => {
 
   React.useEffect(() => {
     const canvasDivElement = canvasRef.current;
+
+    // NOTE: If you change TEXT value to something else, you'll need to make changes in sketch.js as well to make it work
+    // See my comments in sketch.js
     new p5(sketch(canvasDivElement, TEXT), canvasDivElement);
   })
 
