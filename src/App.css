@@ -12,7 +12,7 @@ body {
 @keyframes loading {
   from {
     scale: 0;
-    -webkit-transform: scale(0.4);
+    -webkit-transform: scale(0);
   }
 
   to {
